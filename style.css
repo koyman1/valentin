@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.wrapper{
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+.darkness{
+    width: 100vh;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: .9;
+    position: absolute;
+    overflow-y: hidden;
+}
+.site_bg{
+    opacity: 1;
+}
+.site_bg img{
+    width: 100px;
+    margin: 10px;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 5;
+    padding: 50px;
+    overflow-y: hidden;
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+    top: 0;
+    animation: FirstAnim 3s;
+}
+@keyframes FirstAnim {
+    0% {
+      opacity: 30%;
+      font-size: 30px;
+    }
+    100% {
+        opacity: 100%;
+        font-size: 50px;
+    }
+  }
+  .content h2{
+    color: white;
+    font-size: 50px;
+    animation: SecondAnim 6s;
+}
+@keyframes SecondAnim {
+    0% {
+      opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 30%;
+        font-size: 30px;    
+    }
+    100% {
+        opacity: 100%;
+        font-size: 50px;
+    }
+  }
+  .content h3{
+    color: white;
+    font-size: 35px;
+    animation: ThirdAnim 10s;
+}
+@keyframes ThirdAnim {
+    0% {
+      opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 30%;
+        font-size: 0px;    
+    }
+    100% {
+        opacity: 100%;
+        font-size: 35px;
+    }
+  }
+  .fourthanim{
+    animation: FourthAnim 15s;
+    width: 100px;
+}
+@keyframes FourthAnim {
+    0% {
+      opacity: 0;
+    }
+    10%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        opacity: 0;
+    }
+    50%{
+        width: 1px;
+        opacity: 30%; 
+    }
+    100% {
+        width: 100px;
+        opacity: 100%;
+        display: none;
+    }
+  }
+.heart {
+    z-index: 6;
+    opacity: 0.9;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}

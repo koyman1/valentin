@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Привітання</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hearts-container"></div>
+        <div class="site_bg">
+            <div class="content">
+                <h1>Кошеня</h1>
+                <h2>❤️❤️❤️</h2><br><br><br><br>
+                <h3>Вітаю тебе з днем закоханих!</h3><br><br><br><br><br><br>
+                <a href="pink-flowers.html"><img class="fourthanim" src="img/butt.webp"></a>
+            </div>
+            <div class="darkness">
+            </div>
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg">
+                <img src="img/4.jpg">
+                <img src="img/5.jpg">
+                <img src="img/6.jpg">
+                <img src="img/7.jpg">
+                <img src="img/8.jpg">
+                <img src="img/9.jpg">
+                <img src="img/10.jpg">
+                <img src="img/11.jpg">
+                <img src="img/12.jpg">
+                <img src="img/1.jpg">
+                <img src="img/2.jpg">
+                <img src="img/3.jpg">
+                <img src="img/4.jpg">
+                <img src="img/5.jpg">
+                <img src="img/6.jpg">
+                <img src="img/7.jpg">
+                <img src="img/8.jpg">
+                <img src="img/9.jpg">
+                <img src="img/10.jpg">
+                <img src="img/11.jpg">
+                <img src="img/12.jpg">
+        </div>
+    </div>
+    <script>
+        const heartsContainer = document.querySelector('.hearts-container');
+const heartImages = ['img/heart1.png', 'img/heart2.png', 'img/heart3.png'];
+
+function createHeart() {
+    const heart = document.createElement('img');
+    heart.src = heartImages[Math.floor(Math.random() * heartImages.length)];
+    heart.classList.add('heart');
+
+    const startPositionX = Math.random() * window.innerWidth;
+    const animationDuration = Math.random() * 3 + 2;
+
+    heart.style.left = `${startPositionX}px`;
+    heart.style.animationDuration = `${animationDuration}s`;
+
+    heartsContainer.appendChild(heart);
+
+    heart.addEventListener('animationend', () => {
+        heart.remove();
+    });
+}
+
+setInterval(createHeart, 900);
+    </script>
+</body>
+</html>
