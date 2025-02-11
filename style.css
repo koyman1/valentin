@@ -19,7 +19,7 @@ body{
     width: 100vh;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    opacity: .9;
+    opacity: .7;
     position: absolute;
     overflow-y: hidden;
 }
